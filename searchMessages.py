@@ -12,7 +12,7 @@ from telethon.tl.types import InputMessagesFilterEmpty
 
 filter = InputMessagesFilterEmpty()
 result = client(SearchRequest(
-    peer=305536970,      # On which chat/conversation
+    peer=1116410516,      # On which chat/conversation
     q='',      # What to search for
     filter=filter,  # Filter to use (maybe filter for media)
     min_date=None,  # Minimum date
@@ -22,7 +22,7 @@ result = client(SearchRequest(
     limit=10,       # How many results
     max_id=0,       # Maximum message ID
     min_id=0,       # Minimum message ID
-    from_id=None,   # Who must have sent the message (peer)
+    from_id=557106529,   # Who must have sent the message (peer)
     hash=0          # Special number to return nothing on no-change
 ))
 print(result)
