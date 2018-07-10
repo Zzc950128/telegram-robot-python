@@ -13,10 +13,9 @@ from telethon.tl.functions.messages import AddChatUserRequest
 client(AddChatUserRequest(
 #    chat_id,
 #    user_to_add,
-    305536970,
-#    258594619,
-    616027765,
-    fwd_limit=10  # Allow the user to see the 10 last messages
+    287198031,
+    35329111,
+    fwd_limit=10  # Allow the user to see the 10 last mixue0203@outlook.comessages
 ))
 
 from telethon.tl.functions.channels import InviteToChannelRequest

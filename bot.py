@@ -1,7 +1,7 @@
 import logging
 from telegram.ext import Updater, CommandHandler
 
-updater = Updater(token='559899786:AAF0icPrHjiA0WZ3-GR4SmnAD-htwYqkHZo')
+updater = Updater(token='617336269:AAGAAmLZFsJ1fgSS9FvgKtXDbXvb8sYiLWs')
 
 dispatcher = updater.dispatcher
 

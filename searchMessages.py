@@ -25,4 +25,7 @@ result = client(SearchRequest(
     from_id=557106529,   # Who must have sent the message (peer)
     hash=0          # Special number to return nothing on no-change
 ))
-print(result)
+#print(result.to_dict()['messages'][0]['message'].encode('utf-8'))
+print('count: '+str(len(result.to_dict()['messages'])))
+for item in result.to_dict()['messages']:
+	print(item['message'])

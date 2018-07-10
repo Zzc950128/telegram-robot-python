@@ -15,6 +15,8 @@ user_col = db.list
 
 for item in user_col.find():
 	if item['type'] != 'User':
-#		print(item)
 		msg = client.get_entity(item['title'])
-		print(msg)
+#		for user_item in user_col.find({'title':item['title']}):
+#			print(user_item)
+		user_col.update_many({'title': item['title']},{'$set':{'id': msg.to_dict()['id']}})
+#		print(msg.to_dict()['id'])

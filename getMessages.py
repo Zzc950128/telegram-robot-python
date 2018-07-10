@@ -14,10 +14,16 @@ result = client(GetHistoryRequest(
     offset_id=0,    # ID of the message to use as offset
     offset_date=None,    # ID of the message to use as offset
     add_offset=0,   # Additional offset
-    limit=20,       # How many results
+    limit=10,       # How many results
     max_id=0,       # Maximum message ID
     min_id=0,       # Minimum message ID
     hash=0          # Special number to return nothing on no-change
 ))
-print(result)
-
+for item in result.to_dict()['messages']:
+	if 'message' in item:
+		print(item['message'])
+#for item in result.messages:
+#	print(item)
+#print(result.messages)
+#print(result.to_dict()['chats'][0]['title'].encode('utf-8'))
+#print(result)
